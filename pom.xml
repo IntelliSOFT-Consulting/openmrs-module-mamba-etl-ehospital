@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>org.openmrs.module</groupId>
-    <artifactId>mamba-etl</artifactId>
+    <artifactId>mamba-etl-ehospital</artifactId>
     <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>MambaETL Reference Module</name>
