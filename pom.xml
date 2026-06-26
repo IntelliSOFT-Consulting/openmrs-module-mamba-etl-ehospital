@@ -19,9 +19,9 @@
     <url>https://wiki.openmrs.org/x/FQ4z</url>
 
     <scm>
-        <connection>scm:git:git@github.com:UCSF-IGHS/openmrs-module-mamba-etl.git</connection>
-        <url>https://github.com/UCSF-IGHS/openmrs-module-mamba-etl</url>
-        <developerConnection>scm:git:git@github.com:UCSF-IGHS/openmrs-module-mamba-etl.git</developerConnection>
+        <connection>scm:git:https://github.com/IntelliSOFT-Consulting/openmrs-module-mamba-etl-ehospital.git</connection>
+        <url>https://github.com/IntelliSOFT-Consulting/openmrs-module-mamba-etl-ehospital</url>
+        <developerConnection>scm:git:https://github.com/IntelliSOFT-Consulting/openmrs-module-mamba-etl-ehospital.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -43,6 +43,8 @@
         <MODULE_VERSION>${project.parent.version}</MODULE_VERSION>
         <MODULE_PACKAGE>${project.parent.groupId}.${project.parent.artifactId}</MODULE_PACKAGE>
 
+        <repsysReleasesUrl>https://repo.repsy.io/intellisoftdev/ehospital/</repsysReleasesUrl>
+        <repsysSnapshotsUrl>https://repo.repsy.io/intellisoftdev/ehospital/</repsysSnapshotsUrl>
     </properties>
 
     <dependencyManagement>
@@ -478,14 +480,14 @@
 
     <distributionManagement>
         <repository>
-            <id>openmrs-repo-modules</id>
-            <name>Modules</name>
-            <url>http://mavenrepo.openmrs.org/nexus/content/repositories/modules/</url>
+            <id>repsys-releases</id>
+            <name>Repsy Releases</name>
+            <url>${repsysReleasesUrl}</url>
         </repository>
         <snapshotRepository>
-            <id>openmrs-repo-snapshots</id>
-            <name>OpenMRS Snapshots</name>
-            <url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
+            <id>repsys-snapshots</id>
+            <name>Repsy Snapshots</name>
+            <url>${repsysSnapshotsUrl}</url>
         </snapshotRepository>
     </distributionManagement>
 
